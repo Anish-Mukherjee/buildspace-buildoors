@@ -18,7 +18,21 @@ const Home: NextPage = () => {
         h="calc(100vh)"
         bgImage={"url(/home-background.svg)"}
         backgroundPosition="center"
-      ></Box>
+      >
+        <Stack w="full" h="calc(100vh)" justify="center">
+          {/*Navbar*/}
+          <Spacer />
+          {/* If connected second view otherwise first view*/}
+          <Spacer />
+          <Center>
+            <Box marginBottom={4} color="white">
+              <a href="https://twitter.com/0xanish" target="_blank" rel="noopener noreferrer">
+                Built with ♥ by @0xanish
+              </a>
+            </Box>
+          </Center>
+        </Stack>
+      </Box>
     </div>
   );
 };
